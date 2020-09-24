@@ -14,7 +14,9 @@ public class Main {
         // tipo_variable[] nombre_vector = new tipo_variable[tamano]
         Scanner thule = new Scanner(System.in);
         ClsVectores ClsVector = new ClsVectores();
-        int n, numeros[];
+        ClsVectores oper = new ClsVectores();
+        
+        int n, numeros[],mayor, menor, suma;
         double prom;
         
         System.out.println("Ingrese el tamaño del vector: ");
@@ -24,6 +26,15 @@ public class Main {
         prom = ClsVector.promedio(n, numeros);
         
         ClsVector.imprimirVector(n, numeros);
+        
+        mayor = oper.hallarMayor(n, numeros);
+        System.out.println("El mayor elemnto del vector es: " + mayor);
+        
+        menor = oper.hallarMenor(n, numeros);
+        System.out.println("El menor elemnto del vector es: " + menor);
+        
+        suma = oper.hallarSuma(n, numeros);
+        System.out.println("La suma de los elementos de las posiciones pares es: " + suma);
     }
     
 }

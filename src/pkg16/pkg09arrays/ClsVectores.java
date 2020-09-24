@@ -5,7 +5,7 @@ y el promedio de sus elementos.
 package pkg16.pkg09arrays;
 import java.util.Scanner;
 
-public class ClsVectores
+public class ClsVectores extends ClsOperaciones
         
 {
     Scanner thule = new Scanner(System.in);
@@ -45,5 +45,14 @@ public class ClsVectores
             System.out.print(numeros[i] + ", ");
         }
         System.out.println("\nEl promedio de los números es: " + promed);
+        
+        //mayor = ClsOperaciones.hallarMayor(n, numeros);
+        //System.out.println("El mayor elemnto del vector es: " + mayor);
+        
+        //menor = ClsOperaciones.hallarMenor(n, numeros);
+        //System.out.println("El menor elemnto del vector es: " + menor);
+        
+        //mayor = ClsOperaciones.hallarSuma(n, numeros);
+        //.out.println("La suma de los elementos de las posiciones pares es: " + suma);
     }
 }
